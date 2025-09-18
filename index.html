@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Details</title>
+</head>
+<body><center>
+<h1>College Admission Details</h1>
+<button onclick="displayDetails()">Show Admission Details</button>
+<p id="admissionDetails"></p>
+
+<script>
+const admissionDetails = {
+              Name: "Bhagavathi.barla",
+            Course: "Data Science",
+              year:2024,
+           College: "Aditya Degree College",
+RegistrationNumber: "2350250099"
+};
+function displayDetails() {
+const details = `
+Name: ${admissionDetails.Name} <br>
+Course: ${admissionDetails.Course} <br>
+Year: ${admissionDetails.year} <br>
+Registration Number: ${admissionDetails.RegistrationNumber} <br>
+College: ${admissionDetails.College}
+`;
+document.getElementById("admissionDetails").innerHTML = details;
+}
+</script>
+</body>
+</center>
+</html>
